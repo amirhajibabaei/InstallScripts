@@ -1,7 +1,7 @@
 #! /bin/bash
 
 series="4.0"
-minor="1"
+minor="2rc3"
 version=$series.$minor
 
 SOURCE=openmpi-$version
