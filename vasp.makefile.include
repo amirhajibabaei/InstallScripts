@@ -21,15 +21,15 @@ OFLAG      = -O2
 OFLAG_IN   = $(OFLAG)
 DEBUG      = -O0
 
-LIBDIR     = /home/amir/.SUPER/numerical/lib
+LIBDIR     = $(HOME)/.SUPER/numerical/lib
 BLAS       = -L$(LIBDIR) -lopenblas
 LAPACK     = -L$(LIBDIR) -lopenblas
 BLACS      = 
-SCALAPACK  = -L/home/amir/.SUPER/numerical/lib -lscalapack $(BLACS)
+SCALAPACK  = -L$(HOME)/.SUPER/numerical/lib -lscalapack $(BLACS)
 
 LLIBS      = $(SCALAPACK) $(LAPACK) $(BLAS)
 
-FFTW       ?= /home/amir/.SUPER/numerical
+FFTW       ?= $(HOME)/.SUPER/numerical
 LLIBS      += -L$(FFTW)/lib -lfftw3
 INCS       = -I$(FFTW)/include
 
