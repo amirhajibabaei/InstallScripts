@@ -6,7 +6,7 @@ version=$series.$minor
 
 SOURCE=fftw-$version
 WORKDIR="$HOME/.SUPER/sources"
-INSTALLDIR="$HOME/.SUPER/fftw"
+INSTALLDIR="$HOME/.SUPER/numerical"
 
 mkdir -p $WORKDIR
 mkdir -p $INSTALLDIR

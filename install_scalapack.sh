@@ -1,13 +1,13 @@
 #! /bin/bash
 
-series="2.0"
-minor="2"
+series="2.1"
+minor="0"
 version=$series.$minor
 
 SOURCE=scalapack-$version
 WORKDIR="$HOME/.SUPER/sources"
-prefix="$HOME/.SUPER/scalapack"
-libdir="$HOME/.SUPER/OpenBLAS/lib"
+prefix="$HOME/.SUPER/numerical"
+libdir="$HOME/.SUPER/numerical/lib"
 
 mkdir -p $WORKDIR
 mkdir -p $prefix
